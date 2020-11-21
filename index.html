@@ -20,6 +20,44 @@
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="css/slicknav.css">
 <link rel="stylesheet" href="css/style.css">
+<style>
+    .prizes{
+  background-image: url('../img/banner/resister.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prize-card{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.prize-money-box{
+  width: 100%;
+  height: 75%;
+  padding: 105px 0;
+}
+
+.prize-money{
+  height: 100%;
+  width: 100%;
+}
+
+.prize-img{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+.prize-padd{
+    padding: 30px;
+}
+}
+
+</style>
 <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <body>
@@ -29,17 +67,16 @@
 <!-- header-start -->
 <!-- header-end -->
 <!-- slider_area_start -->
-<div class="slider_area slider_bg_1" style="padding-top: 100px;">
+<div class="slider_area slider_bg_1" style="padding-top: 100px; height: 100vh;">
 <div class="slider_text">
 <div class="container">
 <div class="position_relv">
 <h1 class="opcity_text d-none d-lg-block">SheHacks'21</h1>
 <div class="row">
 <div class="col-xl-9">
-<div class="title_text">
-<h3>Objects on the <br>
-website are closer<br>
-than they appear :)</h3>
+<div class="title_text" style="margin-bottom: 75px;">
+<h3 style="font-weight: 300; display: inline;">She</h3><h3 style="display: inline;">Hacks</h3> <br>
+<h3 style="font-weight: 200; font-size: 20px;">Empowering young girls to explore the possibilities in CODE!</h3>
 </div>
 </div>
 </div>
@@ -103,6 +140,23 @@ Year 2021</h3>
 </div>
 </div>
 </div>
+<!-- resister_book_start -->
+<div class="resister_book resister_bg_1">
+    <div class="container">
+    <div class="row">
+    <div class="col-xl-12">
+    <div class="resister_text text-center">
+    <h3>Interested in sponsoring SheHacks?</h3>
+    <a href="SheHacks - Association Brochure.pdf" class="boxed-btn-white">SheHacks- Association Brochure</a>
+    <br><br>
+    <h3 style="margin-bottom: 0px;"><small style="font-size: 20px; font-weight: 350;">Contact us at <a href="mailto:team.aparoksha@iiita.ac.in">team.aparoksha@iiita.ac.in</a></small></h3>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+        <!-- resister_book_end -->
+
 
 <!-- speakers_start -->
 <div class="speakers_area">
@@ -161,25 +215,60 @@ Organising Team
 </div>
 </div>
 <!-- speakers_end-->
+<!-- Prizes Start -->
+<div class="prizes mb-95">
+    <div class="container">
+      <div class="row">
+        <div class="col my-5">
+          <div class="serction_title_large">
+            <h3 class="text-center text-white">Prizes</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <div class="prize-money-box">
+              <div class="prize-money">
+                <img class='prize-img' src="./img/prizes/35.png" alt="35">
+              </div>
+            </div>
+            <div class="prize-award text-center">
+              <h3>1st Prize</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <div class="prize-money-box">
+              <div class="prize-money">
+                <img class='prize-img' src="./img/prizes/25.png" alt="25">
+              </div>
+            </div>
+            <div class="prize-award text-center">
+              <h3>2nd Prize</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <div class="prize-money-box">
+              <div class="prize-money">
+                <img class='prize-img' src="./img/prizes/15.png" alt="15">
+              </div>
+            </div>
+            <div class="prize-award text-center">
+              <h3>3rd Prize</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Prizes End -->
 
-<!-- resister_book_start -->
-<div class="resister_book resister_bg_1">
-<div class="container">
-<div class="row">
-<div class="col-xl-12">
-<div class="resister_text text-center">
-<h3>Interested in sposoring SheHacks?</h3>
-<a href="SheHacks - Association Brochure.pdf" class="boxed-btn-white">SheHacks- Association Brochure</a>
-<br><br>
-<h3 style="margin-bottom: 0px;"><small style="font-size: 20px; font-weight: 350;">Contact us at <a href="mailto:team.aparoksha@iiita.ac.in">team.aparoksha@iiita.ac.in</a></small></h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-    <!-- resister_book_end -->
 <!-- faq_area_Start -->
-<div class="faq_area">
+<div class="faq_area" style="padding-top: 0;">
 <div class="container">
 <div class="row">
 <div class="col-xl-12">
@@ -245,7 +334,7 @@ Teams can consist of anywhere from 2-3 people.
 </div>
 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
 <div class="card-body">
-Nope, you can't.The projects have to be developed within the given timeframe from scratch.
+Nope, you can't. The projects have to be developed within the given timeframe from scratch.
 </div>
 </div>
 </div>
@@ -273,7 +362,7 @@ Nope, you can't.The projects have to be developed within the given timeframe fro
 </div>
 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
 <div class="card-body">
-    Please email us at geekhaven@iiita.ac.inwith all your questions!
+    Please email us at <a href="mailto:team.aparoksha@iiita.ac.in">team.aparoksha@iiita.ac.in</a>  with all your questions!
 </div>
 </div>
 </div>
@@ -308,9 +397,8 @@ Follow Us
 Links
 </h3>
 <ul>
-<li><a target="_blank" href="#">Schedule</a></li>
-<li><a target="_blank" href="#">Sponsors</a></li>
-<li><a target="_blank" href="#">Contact</a></li>
+<li><a target="_blank" href="https://www.flickr.com/photos/ams_iiita/albums/72157677045762737">Gallery</a></li>
+<li><a target="_blank" href="https://hackcodeofconduct.org/">Code of Conduct</a></li>
 </ul>
 </div>
 </div>
@@ -321,7 +409,7 @@ Organisers
 </h3>
 <p>
 SheHacks, IIIT Allahabad<br>
-team@shehacks.tech <br>
+<a href="mailto:team.aparoksha@iiita.ac.in" style="color: white;">team.aparoksha@iiita.ac.in</a>  <br>
 +91 89890 73560
 </p>
 </div>

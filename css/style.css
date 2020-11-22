@@ -1903,7 +1903,7 @@ h3 {
 .brand_area .brand_active .single_brand img {
   width: auto;
   display: inline-block;
-  filter: contrast(0);
+  /* filter: contrast(0); */
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;

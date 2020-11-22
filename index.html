@@ -22,6 +22,24 @@
   <link rel="stylesheet" href="css/slicknav.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .header-area .main-header-area .logo-img img{
+      height: 100%;
+      width: 30px;
+      object-fit: contain;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .header-area .main-header-area .logo-img img{
+        height: 100%;
+        width: 20px;
+        object-fit: contain;
+      }
+    }
+
     .prizes {
       background-image: url('../img/banner/resister.png');
       background-repeat: no-repeat;
@@ -74,7 +92,7 @@
             <div class="col-xl-2 col-lg-2">
               <div class="logo-img">
                 <a href="index-2.html">
-                  <img src="img/logo.png" alt="">
+                  <img src="img/she1.png" alt=""> 
                 </a>
               </div>
             </div>
@@ -82,9 +100,14 @@
               <div class="main-menu  d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a class="active" href="index-2.html">home</a></li>
-                    <li><a href="Schedule.html">Schedule</a></li>
-                    <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                    <li><a class="active" href="#about">About</a></li>
+                    <li><a href="#register">Sponsorship</a></li>
+                    <li><a href="#organisers">Organisers</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li class="d-lg-none"><a href="#">Register</a></li>
+                    <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                       <ul class="submenu">
                         <li><a href="blog.html">blog</a></li>
                         <li><a href="single-blog.html">single-blog</a></li>
@@ -94,17 +117,14 @@
                       <ul class="submenu">
                         <li><a href="elements.html">elements</a></li>
                       </ul>
-                    </li>
-                    <li><a href="Speakers.html">Speakers</a></li>
-                    <li><a href="Venue.html">Venue</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    </li> -->
                   </ul>
                 </nav>
               </div>
             </div>
             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
               <div class="buy_ticket">
-                <a href="#" class="boxed-btn-white">Buy Ticket</a>
+                <a href="#" class="boxed-btn-white">Register</a>
               </div>
             </div>
             <div class="col-12">
@@ -159,7 +179,7 @@
   </div>
   <!-- slider_area_end -->
   <!-- about_area_start -->
-  <div class="about_area">
+  <div class="about_area" id="about">
     <div class="shape-1 d-none d-xl-block">
       <img src="img/about/shap1.png" alt="">
     </div>
@@ -193,7 +213,7 @@
     </div>
   </div>
   <!-- resister_book_start -->
-  <div class="resister_book resister_bg_1">
+  <div class="resister_book resister_bg_1" id="register">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -212,7 +232,7 @@
 
 
   <!-- speakers_start -->
-  <div class="speakers_area">
+  <div class="speakers_area" id="organisers">
     <h1 class="horizontal_text d-none d-lg-block">
       Organising Team
     </h1>
@@ -272,7 +292,7 @@
   </div>
   <!-- speakers_end-->
   <!-- Prizes Start -->
-  <div class="prizes mb-95">
+  <div class="prizes mb-95" id="prizes">
     <div class="container">
       <div class="row">
         <div class="col my-5">
@@ -324,7 +344,7 @@
   <!-- Prizes End -->
 
   <!-- faq_area_Start -->
-  <div class="faq_area" style="padding-top: 0;">
+  <div class="faq_area" id="faq" style="padding-top: 0;">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -437,7 +457,7 @@
   </div>
   <!-- faq_area_end -->
   <!-- footer_start -->
-  <footer class="footer footer_bg_1">
+  <footer class="footer footer_bg_1" id="contact">
     <div class="circle_ball d-none d-lg-block">
       <img src="img/banner/footer_ball.png" alt="">
     </div>

@@ -6,9 +6,11 @@
     if (scroll < 400) {
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
+      $('.large-hidden').css('visibility', 'hidden')
     } else {
       $("#sticky-header").addClass("sticky");
       $('#back-top').fadeIn(500);
+      $('.large-hidden').css('visibility', 'visible');
     }
   });
 

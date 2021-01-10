@@ -6,11 +6,13 @@
     if (scroll < 400) {
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
-      $('.large-hidden').css('visibility', 'hidden')
+      $('.large-hidden').css('visibility', 'hidden');
+      $('.register_link').addClass('register_hide');
     } else {
       $("#sticky-header").addClass("sticky");
       $('#back-top').fadeIn(500);
       $('.large-hidden').css('visibility', 'visible');
+      $('.register_link').removeClass('register_hide')
     }
   });
 

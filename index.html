@@ -32,6 +32,10 @@
       object-fit: contain;
     }
 
+    /* .register_hide {
+      display: none !important;
+    } */
+
     @media only screen and (max-width: 1200px) {
       .header-area .main-header-area .logo-img img {
         height: 100%;
@@ -133,7 +137,12 @@
                     <li><a href="#prizes">Prizes</a></li>
                     <li><a href="#faq">FAQs</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li class="d-lg-none"><a href="https://docs.google.com/forms/d/1nNMH-hx4uM3cQLfsYNXkNPdLFj9LKTLXLD6w5VXbfv8/edit?usp=sharing">Register</a></li>
+                    <li class="d-lg-none register_link register_hide">
+                      <!-- <div class="apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG" data-button-theme="dark"
+                        style="height: 44px; width: 312px">Apply with Devfolio</div> -->
+                      <a
+                        href="https://docs.google.com/forms/d/1nNMH-hx4uM3cQLfsYNXkNPdLFj9LKTLXLD6w5VXbfv8/edit?usp=sharing">Register</a>
+                    </li>
                     <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
                       <ul class="submenu">
                         <li><a href="blog.html">blog</a></li>
@@ -150,8 +159,11 @@
               </div>
             </div>
             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-              <div class="buy_ticket">
-                <a href="https://docs.google.com/forms/d/1nNMH-hx4uM3cQLfsYNXkNPdLFj9LKTLXLD6w5VXbfv8/edit?usp=sharing" class="boxed-btn-white">Register</a>
+              <div class="buy_ticket register_link register_hide">
+                <!-- <div class="apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG" data-button-theme="dark-inverted"
+                  style="height: 44px; width: 312px">Apply with Devfolio</div> -->
+                <a href="https://docs.google.com/forms/d/1nNMH-hx4uM3cQLfsYNXkNPdLFj9LKTLXLD6w5VXbfv8/edit?usp=sharing"
+                  class="boxed-btn-white">Register</a>
               </div>
             </div>
             <div class="col-12">
@@ -178,6 +190,8 @@
                   possibilities in
                   CODE!</h3>
               </div>
+              <!-- <div class="apply-button" data-hackathon-slug="YOUR-HACKATHON-SLUG" data-button-theme="inverted"
+                style="height: 44px; width: 312px">Apply With Devfolio</div> -->
             </div>
           </div>
         </div>
@@ -283,48 +297,91 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-9">
               <div class="single_brand text-center">
-                <img src="./img/patrons/devfolio.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://juspay.in/">
+                  <img src="./img/patrons/juspay.png" class="patron" alt="Brand">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://devfolio.co/home/">
+                  <img src="./img/patrons/devfolio.png" class="patron" alt="Brand">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="https://balsamiq.com/">
+                  <img src="./img/patrons/balsamiq.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
           </div>
           <div class="row mb-5 pt-3 justify-content-between">
             <div class="col-5">
               <div class="single_brand text-center">
-                <img src="./img/patrons/matic.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://matic.network/">
+                  <img src="./img/patrons/matic.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
             <div class="col-5">
               <div class="single_brand text-center">
-                <img src="./img/patrons/r.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://rstudio.com/">
+                  <img src="./img/patrons/r.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
           </div>
           <div class="row my-5 pt-3 justify-content-between">
             <div class="col-5">
               <div class="single_brand text-center">
-                <img src="./img/patrons/portis.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://www.portis.io/">
+                  <img src="./img/patrons/portis.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
             <div class="col-5">
               <div class="single_brand text-center">
-                <img src="./img/patrons/tezos.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://tezos.com/">
+                  <img src="./img/patrons/tezos.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
           </div>
-          <div class="row pt-3 mb-5">
+          <div class="row">
             <div class="col-4">
               <div class="single_brand text-center">
-                <img src="./img/patrons/deepsource.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://deepsource.io/">
+                  <img src="./img/patrons/deepsource.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
             <div class="col-4">
               <div class="single_brand text-center">
-                <img src="./img/patrons/wolfram.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://www.wolfram.com/">
+                  <img src="./img/patrons/wolfram.png" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
             <div class="col-4">
               <div class="single_brand text-center">
-                <img src="./img/patrons/sketch.svg" class="patron" alt="Brand">
+                <a target="_blank" href="https://www.digitalocean.com/">
+                  <img src="./img/patrons/digitalocean.png" class="patron" alt="Brand">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.sketch.com/about-us/">
+                  <img src="./img/patrons/sketch.svg" class="patron" alt="Brand">
+                </a>
               </div>
             </div>
           </div>
@@ -751,6 +808,9 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-23581568-13');</script>
+
+  <!-- Devfolio Registration Script -->
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/wemeet/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Nov 2020 20:15:14 GMT -->

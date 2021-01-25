@@ -51,14 +51,29 @@
     }
 
     .prize-card {
-      height: 400px;
+      width: 100%;
       display: flex;
       flex-direction: column;
       background-color: white;
-      border-radius: 20px;
+      border-radius: 30px;
     }
 
-    .prize-money-box {
+    .prizeBox {
+      width: 100%;
+      border-radius: 30px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .prize-padd {
+        padding: 30px;
+      }
+
+      .large-hidden {
+        visibility: visible;
+      }
+    }
+
+    /* .prize-money-box {
       width: 100%;
       height: 75%;
       padding: 105px 0;
@@ -72,17 +87,7 @@
     .prize-img {
       width: 100%;
       height: 100%;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .prize-padd {
-        padding: 30px;
-      }
-
-      .large-hidden {
-        visibility: visible;
-      }
-    }
+    } */
 
     .patron {
       /* height: 100%; */
@@ -666,40 +671,77 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
           <div class="prize-card">
-            <div class="prize-money-box">
-              <div class="prize-money">
-                <img class='prize-img' src="./img/prizes/35.png" alt="35">
-              </div>
-            </div>
-            <div class="prize-award text-center">
-              <h3>1st Prize</h3>
-            </div>
+            <img class="prizeBox" src="./img/prizes/1st.png" alt="">
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
           <div class="prize-card">
-            <div class="prize-money-box">
-              <div class="prize-money">
-                <img class='prize-img' src="./img/prizes/25.png" alt="25">
-              </div>
-            </div>
-            <div class="prize-award text-center">
-              <h3>2nd Prize</h3>
-            </div>
+            <img class="prizeBox" src="./img/prizes/2nd.png" alt="">
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-95 prize-padd">
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
           <div class="prize-card">
-            <div class="prize-money-box">
-              <div class="prize-money">
-                <img class='prize-img' src="./img/prizes/15.png" alt="15">
-              </div>
-            </div>
-            <div class="prize-award text-center">
-              <h3>3rd Prize</h3>
-            </div>
+            <img class="prizeBox" src="./img/prizes/3rd.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/BFY.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f1.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f2.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f4.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f5.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f10.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f7.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f8.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f6.png" alt="">
           </div>
         </div>
       </div>

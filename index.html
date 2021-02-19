@@ -26,6 +26,23 @@
       scroll-behavior: smooth;
     }
 
+    .trust_badge {
+      display: block;
+      max-width: 100px;
+      min-width: 60px;
+      position: absolute;
+      right: 20px;
+      top: 0;
+      width: 10%;
+      z-index: 8;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .trust_badge {
+        left: 20px;
+      }
+    }
+
     .header-area .main-header-area .logo-img img {
       height: 100%;
       width: 30px;
@@ -41,6 +58,16 @@
         height: 100%;
         width: 20px;
         object-fit: contain;
+      }
+    }
+
+    .slider_area.slider_bg_1 {
+      padding-top: 200px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .slider_area.slider_bg_1 {
+        padding-top: 100px;
       }
     }
 
@@ -73,22 +100,6 @@
       }
     }
 
-    /* .prize-money-box {
-      width: 100%;
-      height: 75%;
-      padding: 105px 0;
-    }
-
-    .prize-money {
-      height: 100%;
-      width: 100%;
-    }
-
-    .prize-img {
-      width: 100%;
-      height: 100%;
-    } */
-
     .patron {
       /* height: 100%; */
       width: 100%;
@@ -116,10 +127,14 @@
   <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
+<a id="mlh-trust-badge" class="trust_badge"
+  href="https://mlh.io/seasons/2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+  target="_blank">
+  <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+    alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
+</a>
+
 <body>
-  <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
   <!-- header-start -->
   <header>
     <div class="header-area ">
@@ -142,20 +157,9 @@
                     <li><a href="#prizes">Prizes</a></li>
                     <li><a href="#faq">FAQs</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li class="d-lg-none register_link register_hide">
-                      <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark"
+                    <!-- <li class="d-lg-none register_link register_hide">
+                      <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark-inverted"
                         style="height: 44px; width: 312px">Apply with Devfolio</div>
-                    </li>
-                    <!-- <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                      <ul class="submenu">
-                        <li><a href="blog.html">blog</a></li>
-                        <li><a href="single-blog.html">single-blog</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                      <ul class="submenu">
-                        <li><a href="elements.html">elements</a></li>
-                      </ul>
                     </li> -->
                   </ul>
                 </nav>
@@ -165,8 +169,6 @@
               <div class="buy_ticket register_link register_hide">
                 <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark-inverted"
                   style="height: 44px; width: 312px">Apply with Devfolio</div>
-                <!-- <a href="https://docs.google.com/forms/d/1nNMH-hx4uM3cQLfsYNXkNPdLFj9LKTLXLD6w5VXbfv8/edit?usp=sharing"
-                  class="boxed-btn-white">Register</a> -->
               </div>
             </div>
             <div class="col-12">
@@ -179,7 +181,7 @@
   </header>
   <!-- header-end -->
   <!-- slider_area_start -->
-  <div class="slider_area slider_bg_1" style="padding-top: 200px; height: 100vh;">
+  <div class="slider_area slider_bg_1" style="height: 100vh;">
     <div class="slider_text">
       <div class="container">
         <div class="position_relv">
@@ -300,8 +302,8 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-9">
               <div class="single_brand text-center">
-                <a target="_blank" href="https://circleci.com/">
-                  <img src="./img/patrons/circle.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://juspay.in/">
+                  <img src="./img/patrons/juspay.png" class="patron" alt="Brand">
                 </a>
               </div>
             </div>
@@ -309,8 +311,8 @@
           <div class="row mb-5 justify-content-center">
             <div class="col-9">
               <div class="single_brand text-center">
-                <a target="_blank" href="https://juspay.in/">
-                  <img src="./img/patrons/juspay.png" class="patron" alt="Brand">
+                <a target="_blank" href="https://circleci.com/">
+                  <img src="./img/patrons/circle.png" class="patron" alt="Brand">
                 </a>
               </div>
             </div>
@@ -347,6 +349,15 @@
               <div class="single_brand text-center d-flex justify-content-center">
                 <a target="_blank" href="https://balsamiq.com/">
                   <img src="./img/patrons/balsamiq.png" class="patron" alt="Brand">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="https://www.codingninjas.com/">
+                  <img src="./img/patrons/code_ninjas.png" class="patron" alt="Brand">
                 </a>
               </div>
             </div>
@@ -903,7 +914,7 @@
                 <li><a target="_blank"
                     href="https://www.flickr.com/photos/ams_iiita/albums/72157677045762737">Gallery</a>
                 </li>
-                <li><a target="_blank" href="https://hackcodeofconduct.org/">Code of Conduct</a></li>
+                <li><a target="_blank" href="http://mlh.io/code-of-conduct">Code of Conduct</a></li>
               </ul>
             </div>
           </div>

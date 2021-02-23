@@ -552,6 +552,22 @@ h3 {
   outline: none;
 }
 
+.boxed-btn-violet-inverted {
+  background: #fff;
+  color: #6079d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  text-transform: capitalize;
+}
+
+
 /* line 49, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-violet.large-width {
   width: 220px;

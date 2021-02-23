@@ -11,6 +11,9 @@
   <link rel="shortcut icon" type="image/x-icon" href="favico/favicon.ico">
   <!-- Place favicon.ico in the root directory -->
   <!-- CSS here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -26,7 +29,7 @@
       scroll-behavior: smooth;
     }
 
-    .trust_badge {
+    .trust_badge1 {
       display: block;
       max-width: 100px;
       min-width: 60px;
@@ -38,8 +41,37 @@
     }
 
     @media only screen and (max-width: 992px) {
-      .trust_badge {
+      .trust_badge1 {
         left: 20px;
+      }
+    }
+
+    .trust_badge2 {
+      display: block;
+      max-width: 75px;
+      min-width: 60px;
+      position: absolute;
+      right: 140px;
+      top: 0;
+      width: 10%;
+      z-index: 8;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .trust_badge2 {
+        left: 140px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .trust_badge2 {
+        left: 120px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .trust_badge2 {
+        left: 100px;
       }
     }
 
@@ -127,11 +159,15 @@
   <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
-<a id="mlh-trust-badge" class="trust_badge"
+<a id="mlh-trust-badge" class="trust_badge1"
   href="https://mlh.io/seasons/2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
   target="_blank">
   <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
     alt="Major League Hacking 2021 Hackathon Season" style="width:100%">
+</a>
+
+<a class="trust_badge2" href="#" target="_blank">
+  <img src="./img/patrons/ihl.svg" style="width:100%">
 </a>
 
 <body>
@@ -253,7 +289,9 @@
               technology and become innovators, leaders and entrepreneurs.
               It's a process and it's not always straightforward. It takes time, action and support.
               Join us on a mission! Together we can make a difference.</p>
-            <a href="https://discord.com/invite/wZFFGNVv" class="boxed-btn-violet">Join Our Discord</a>
+            <a href="https://discord.com/invite/wZFFGNVv" class="boxed-btn-violet">
+              <i class="fab fa-2x fa-discord"></i>&nbsp;&nbsp; Join Our Discord
+            </a>
           </div>
         </div>
       </div>

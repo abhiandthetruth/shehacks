@@ -526,25 +526,25 @@ h3 {
 }
 
 .boxed-btn-violet {
-  background: #fff;
-  color: #7289da;
-  display: inline-block;
-  padding: 16px 44px;
+  background: #6079d1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  border: 0;
-  border: 2px solid #7289da;
-  text-align: center;
-  color: #7289da !important;
+  border-radius: 40px;
+  border: 2px solid #6079d1;
   text-transform: capitalize;
 }
 
 /* line 41, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-violet:hover {
-  background: #7289da;
-  color: #fff !important;
-  border: 2px solid #7289da;
+  background: #fff;
+  color: #6079d1 !important;
+  border: 2px solid #6079d1;
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */

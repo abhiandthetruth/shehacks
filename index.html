@@ -1,1385 +1,997 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>SheHacks</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="favico/favicon.ico" />
-    <!-- Place favicon.ico in the root directory -->
-    <!-- CSS here -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/themify-icons.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/slicknav.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
 
-      .trust_badge1 {
-        display: block;
-        max-width: 100px;
-        min-width: 60px;
-        position: absolute;
-        right: 20px;
-        top: 0;
-        width: 10%;
-        z-index: 8;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>SheHacks</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="favico/favicon.ico" />
+  <!-- Place favicon.ico in the root directory -->
 
-      @media only screen and (max-width: 992px) {
-        .trust_badge1 {
-          left: 20px;
-        }
-      }
+  <!-- CSS here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/slicknav.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
 
-      .trust_badge2 {
-        display: block;
-        max-width: 150px;
-        min-width: 120px;
-        position: absolute;
-        right: 140px;
-        top: 2px;
-        width: 10%;
-        z-index: 8;
-      }
+<a id="mlh-trust-badge" class="trust_badge1"
+  href="https://mlh.io/seasons/2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
+  target="_blank">
+  <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+    alt="Major League Hacking 2021 Hackathon Season" style="width: 100%" />
+</a>
 
-      @media only screen and (max-width: 992px) {
-        .trust_badge2 {
-          left: 140px;
-        }
-      }
+<a class="trust_badge2" href="#" target="_blank">
+  <img src="./img/patrons/ihl_white.svg" style="width: 100%" />
+</a>
 
-      @media only screen and (max-width: 768px) {
-        .trust_badge2 {
-          left: 120px;
-          min-width: 80px;
-        }
-      }
-
-      @media only screen and (max-width: 600px) {
-        .trust_badge2 {
-          left: 100px;
-        }
-      }
-
-      .header-area .main-header-area .logo-img img {
-        height: 100%;
-        width: 30px;
-        object-fit: contain;
-      }
-
-      .register_hide {
-        display: none !important;
-      }
-
-      @media only screen and (max-width: 1200px) {
-        .header-area .main-header-area .logo-img img {
-          height: 100%;
-          width: 20px;
-          object-fit: contain;
-        }
-      }
-
-      .slider_area.slider_bg_1 {
-        padding-top: 200px;
-      }
-
-      @media only screen and (max-width: 768px) {
-        .slider_area.slider_bg_1 {
-          padding-top: 140px;
-        }
-      }
-
-      .prizes {
-        background-image: url("../img/banner/resister.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .prize-card {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        border-radius: 30px;
-      }
-
-      .prizeBox {
-        width: 100%;
-        border-radius: 30px;
-      }
-
-      @media only screen and (max-width: 600px) {
-        .prize-padd {
-          padding: 30px;
-        }
-
-        .large-hidden {
-          visibility: visible;
-        }
-      }
-
-      .patron {
-        /* height: 100%; */
-        width: 100%;
-      }
-
-      .past-sponsors.brand_area {
-        padding: 50px 0;
-      }
-
-      .past-sponsors__block {
-        background-color: rgba(0, 0, 0, 0.3);
-      }
-
-      .single_brand {
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-
-      .brand_area .brand_active .single_brand img {
-        max-width: 125px;
-        max-height: 50px;
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-  </head>
-
-  <a
-    id="mlh-trust-badge"
-    class="trust_badge1"
-    href="https://mlh.io/seasons/2021/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white"
-    target="_blank"
-  >
-    <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
-      alt="Major League Hacking 2021 Hackathon Season"
-      style="width: 100%"
-    />
-  </a>
-
-  <a class="trust_badge2" href="#" target="_blank">
-    <img src="./img/patrons/ihl_white.svg" style="width: 100%" />
-  </a>
-
-  <body>
-    <!-- header-start -->
-    <header>
-      <div class="header-area">
-        <div id="sticky-header" class="main-header-area">
-          <div class="container-fluid p-0">
-            <div
-              class="row align-items-center justify-content-between no-gutters"
-            >
-              <div class="col-xl-2 col-lg-2">
-                <div class="logo-img">
-                  <img class="large-hidden" src="img/she1.png" alt="" />
-                </div>
+<body>
+  <div class="body_overlay"></div>
+  <!-- Header Start -->
+  <header>
+    <div class="header-area">
+      <div id="sticky-header" class="main-header-area">
+        <div class="container-fluid p-0">
+          <div class="row align-items-center justify-content-between no-gutters">
+            <div class="col-xl-2 col-lg-2">
+              <div class="logo-img">
+                <img class="large-hidden" src="img/she1.png" alt="" />
               </div>
-              <div class="col-xl-8 col-lg-8">
-                <div class="main-menu d-none d-lg-block">
-                  <nav>
-                    <ul id="navigation">
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#organisers">Organisers</a></li>
-                      <li><a href="#prizes">Prizes</a></li>
-                      <li><a href="#faq">FAQs</a></li>
-                      <li><a href="#contact">Contact Us</a></li>
-                      <!-- <li class="d-lg-none register_link register_hide">
+            </div>
+            <div class="col-xl-8 col-lg-8">
+              <div class="main-menu d-none d-lg-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#organisers">Organisers</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <!-- <li class="d-lg-none register_link register_hide">
                       <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark-inverted"
                         style="height: 44px; width: 312px">Apply with Devfolio</div>
                     </li> -->
-                    </ul>
-                  </nav>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 d-none d-lg-block">
+              <div class="buy_ticket register_link register_hide">
+                <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark-inverted"
+                  style="height: 44px; width: 312px">
+                  Apply with Devfolio
                 </div>
               </div>
-              <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                <div class="buy_ticket register_link register_hide">
-                  <div
-                    class="apply-button"
-                    data-hackathon-slug="shehacks21"
-                    data-button-theme="dark-inverted"
-                    style="height: 44px; width: 312px"
-                  >
-                    Apply with Devfolio
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="mobile_menu d-block d-lg-none"></div>
-              </div>
+            </div>
+            <div class="col-12">
+              <div class="mobile_menu d-block d-lg-none"></div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- header-end -->
-    <!-- slider_area_start -->
-    <div
-      class="slider_area slider_bg_1"
-      style="height: 100vh; padding-top: 100px"
-    >
-      <div class="slider_text">
-        <div class="container">
-          <div class="position_relv">
-            <h1 class="opcity_text d-none d-lg-block">SheHacks'21</h1>
-            <div class="row">
-              <div class="col-xl-9" style="margin-bottom: 5%">
-                <div class="title_text" style="margin-bottom: 0px">
-                  <div class="row">
-                    <div class="col-3">
-                      <div class="single_brand text-center">
-                        <a target="_blank" href="https://juspay.in/">
-                          <img
-                            src="./img/patrons/juspay.png"
-                            class="patron"
-                            alt="Brand"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    &nbsp; &nbsp;
-                    <div class="col-3">
-                      <div class="single_brand text-center">
-                        <a target="_blank" href="https://circleci.com/">
-                          <img
-                            src="./img/patrons/circleci.png"
-                            class="patron"
-                            alt="Brand"
-                          />
-                        </a>
-                      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Slider Section Start -->
+  <div class="slider_area slider_bg_1" style="height: 100vh; padding-top: 100px">
+    <div class="slider_text">
+      <div class="container">
+        <div class="position_relv">
+          <h1 class="opcity_text d-none d-lg-block">SheHacks'21</h1>
+          <div class="row">
+            <div class="col-xl-9" style="margin-bottom: 5%">
+              <div class="title_text" style="margin-bottom: 0px">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="single_brand text-center">
+                      <a target="_blank" href="https://juspay.in/">
+                        <img src="./img/patrons/juspay.png" class="patron" alt="Brand" />
+                      </a>
                     </div>
                   </div>
-                  <h3 style="font-weight: 300; display: inline">She</h3>
-                  <h3 style="display: inline">Hacks</h3>
-                  <div class="row">
-                    <div class="col-3" style="margin-left: 27.5%">
-                      <div class="single_brand text-center">
-                        <a target="_blank" href="https://www.elastic.co/">
-                          <img
-                            src="./img/patrons/elastic.png"
-                            class="patron"
-                            alt="Brand"
-                          />
-                        </a>
-                      </div>
+                  &nbsp; &nbsp;
+                  <div class="col-3">
+                    <div class="single_brand text-center">
+                      <a target="_blank" href="https://circleci.com/">
+                        <img src="./img/patrons/circleci.png" class="patron" alt="Brand" />
+                      </a>
                     </div>
                   </div>
-                  <br />
-                  <h3
-                    style="
+                </div>
+                <h3 style="font-weight: 300; display: inline">She</h3>
+                <h3 style="display: inline">Hacks</h3>
+                <div class="row">
+                  <div class="col-3" style="margin-left: 27.5%">
+                    <div class="single_brand text-center">
+                      <a target="_blank" href="https://www.elastic.co/">
+                        <img src="./img/patrons/elastic.png" class="patron" alt="Brand" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <h3 style="
                       font-weight: 200;
                       font-size: 20px;
                       margin-bottom: 0px;
-                    "
-                  >
-                    Empowering young girls to explore the possibilities in CODE!
-                  </h3>
-                </div>
-                <div class="row">
-                  <div class="col-xl-5">
-                    <div
-                      class="apply-button"
-                      data-hackathon-slug="shehacks21"
-                      data-button-theme="dark-inverted"
-                      style="height: 44px; width: 312px"
-                    >
-                      Apply With Devfolio
-                    </div>
-                  </div>
-                  <div class="col-xl-7">
-                    <a
-                      href="https://discord.gg/NMkjn3Vns3"
-                      class="boxed-btn-violet"
-                      style="
-                        width: 312px;
-                        height: 44px;
-                        background: #fff;
-                        color: #6079d1;
-                        border: #fff;
-                        border-radius: 4px;
-                      "
-                    >
-                      <i class="fab fa-2x fa-discord"></i>&nbsp;&nbsp; Join Our
-                      Discord
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="countDOwn_area" style="padding-top: 10px">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-xl-4 col-md-6 col-lg-4">
-              <div class="single_date">
-                <i class="ti-location-pin"></i>
-                <span>Online Event</span>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 col-lg-3">
-              <div class="single_date">
-                <i class="ti-alarm-clock"></i>
-                <span>12-14 March 2021</span>
-              </div>
-            </div>
-            <div class="col-xl-5 col-md-12 col-lg-5">
-              <span id="clock"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- slider_area_end -->
-    <!-- about_area_start -->
-    <div class="about_area" id="about">
-      <div class="shape-1 d-none d-xl-block">
-        <img src="img/about/shap1.png" alt="" />
-      </div>
-      <div class="shape-2 d-none d-xl-block">
-        <img src="img/about/shap2.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6 col-md-6">
-            <div class="about_thumb">
-              <img
-                src="img/she-about.png"
-                style="width: 80%; display: block; margin: auto"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-xl-5 offset-xl-1 col-md-6">
-            <div class="about_info">
-              <div class="section_title">
-                <span class="sub_heading">Welcome To</span>
-                <h3>
-                  The Biggest Female <br />
-                  Hackathon of the <br />
-                  Year 2021
+                    ">
+                  Empowering young girls to explore the possibilities in CODE!
                 </h3>
               </div>
-              <p>
-                To create a more diverse and inclusive tech world, we need to
-                inspire and empower the next generation of female role models to
-                pursue and develop their career in technology and become
-                innovators, leaders and entrepreneurs. It's a process and it's
-                not always straightforward. It takes time, action and support.
-                Join us on a mission! Together we can make a difference.
-              </p>
-              <a href="https://discord.gg/NMkjn3Vns3" class="boxed-btn-violet">
-                <i class="fab fa-2x fa-discord"></i>&nbsp;&nbsp; Join Our
-                Discord
-              </a>
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="apply-button" data-hackathon-slug="shehacks21" data-button-theme="dark-inverted"
+                    style="height: 44px; width: 312px">
+                    Apply With Devfolio
+                  </div>
+                </div>
+                <div class="col-xl-7">
+                  <a href="#" id="myBtn_1" class="boxed-btn-violet header_discord">
+                    <i class="fab fa-2x fa-discord"></i>&nbsp;&nbsp; Join Our Discord
+                  </a>
+                  <div id="myModal_1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content modal-content_1">
+                      <span class="close close_1">&times;</span>
+                      <p>
+                        Please Submit your Application of Devfolio, & after completion of your Registration Process, you
+                        will
+                        receive the link to the Discord Server, via Mail.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- resister_book_start -->
-    <div
-      class="resister_book resister_bg_1"
-      id="register"
-      style="padding: 40px; padding-bottom: 10px"
-    >
+    <div class="countDOwn_area" style="padding-top: 10px">
       <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="resister_text text-center">
-              <h3>Interested in sponsoring SheHacks?</h3>
-              <h3>
-                <small
-                  style="
-                    font-size: 20px;
-                    font-weight: 350;
-                    font-stretch: condensed;
-                    line-height: normal;
-                  "
-                  >By sponsoring SheHacks, you will help promote the culture of
-                  women developers! <br />
-                  Help us overcome social and geographical barriers, and build a
-                  better world through technological innovation!</small
-                >
-              </h3>
-              <a
-                href="SheHacks - Association Brochure.pdf"
-                class="boxed-btn-white"
-                >SheHacks- Association Brochure</a
-              >
-              <br /><br />
-              <h3 style="margin-bottom: 0px">
-                <small style="font-size: 20px; font-weight: 350"
-                  >Contact us at
-                  <a href="mailto:team@shehacks.tech"
-                    >team@shehacks.tech</a
-                  ></small
-                >
-              </h3>
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-md-6 col-lg-4">
+            <div class="single_date">
+              <i class="ti-location-pin"></i>
+              <span>Online Event</span>
             </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-lg-3">
+            <div class="single_date">
+              <i class="ti-alarm-clock"></i>
+              <span>12-14 March 2021</span>
+            </div>
+          </div>
+          <div class="col-xl-5 col-md-12 col-lg-5">
+            <span id="clock"></span>
           </div>
         </div>
       </div>
     </div>
-    <!-- resister_book_end -->
-    <!-- Patrons Section Start -->
-    <div class="speakers_area" style="padding-bottom: 0px">
-      <h1 class="horizontal_text d-none d-lg-block">Our Sponsors</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="serction_title_large mb-95">
-              <h3>Our Sponsors</h3>
-            </div>
-          </div>
-        </div>
-        <div class="brand_area past-sponsors">
-          <div class="container p-5">
-            <div class="row mb-5 justify-content-center">
-              <div class="col-9">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://juspay.in/">
-                    <img
-                      src="./img/patrons/juspay.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-9">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://circleci.com/">
-                    <img
-                      src="./img/patrons/circle.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.elastic.co/">
-                    <img
-                      src="./img/patrons/elastic.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://devfolio.co/home/">
-                    <img
-                      src="./img/patrons/devfolio.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div
-                  class="single_brand text-center d-flex justify-content-center"
-                >
-                  <a target="_blank" href="#">
-                    <img
-                      src="./img/patrons/dic.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div
-                  class="single_brand text-center d-flex justify-content-center"
-                >
-                  <a target="_blank" href="#">
-                    <img
-                      src="./img/patrons/ihl.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div
-                  class="single_brand text-center d-flex justify-content-center"
-                >
-                  <a target="_blank" href="https://balsamiq.com/">
-                    <img
-                      src="./img/patrons/balsamiq.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-center">
-              <div class="col-7">
-                <div
-                  class="single_brand text-center d-flex justify-content-center"
-                >
-                  <a target="_blank" href="https://www.codingninjas.com/">
-                    <img
-                      src="./img/patrons/code_ninjas.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 pt-3 justify-content-between">
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://matic.network/">
-                    <img
-                      src="./img/patrons/matic.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://rstudio.com/">
-                    <img src="./img/patrons/r.png" class="patron" alt="Brand" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row my-5 pt-3 justify-content-between">
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.portis.io/">
-                    <img
-                      src="./img/patrons/portis.svg"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://tezos.com/">
-                    <img
-                      src="./img/patrons/tezos.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row my-5 pt-3 justify-content-between">
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://yoast.com/">
-                    <img
-                      src="./img/patrons/yoast.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-5">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.geeksforgeeks.org/">
-                    <img
-                      src="./img/patrons/gfg.jpeg"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://deepsource.io/">
-                    <img
-                      src="./img/patrons/deepsource.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.wolfram.com/">
-                    <img
-                      src="./img/patrons/wolfram.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.digitalocean.com/">
-                    <img
-                      src="./img/patrons/digitalocean.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5 justify-content-between">
-              <div class="col-4">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://www.sketch.com/about-us/">
-                    <img
-                      src="./img/patrons/sketch.svg"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="single_brand text-center">
-                  <a target="_blank" href="https://get.tech/">
-                    <img
-                      src="./img/patrons/tech.png"
-                      class="patron"
-                      alt="Brand"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Patrons Section End -->
-    <!-- Past Sponsors Section Start -->
-    <div class="speakers_area" style="padding-bottom: 0px">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <h1 class="text-center">Our Past Sponsors</h1>
-          </div>
-        </div>
-        <div class="brand_area past-sponsors">
-          <div class="container past-sponsors__block p-5">
-            <div class="row mb-5">
-              <div class="col-xl-12">
-                <div class="brand_active owl-carousel">
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/balsamiq.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/buildkite.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/codingblocks.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/Crowdera.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/devfolio.svg" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/fold.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/Gatsby-Logo.svg" alt="Brand" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5">
-              <div class="col-xl-12">
-                <div class="brand_active owl-carousel">
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/girlscript.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/hackerearth.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/hasura.svg" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/heroku.svg" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/jetbrains.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img
-                      src="./img/sponsors/linode-full-RGB-fc.svg"
-                      alt="Brand"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="brand_active owl-carousel">
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/logo-elastic.svg" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/matic.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/Protoio-logo.svg" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/quicknode.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/TECH.png" alt="Brand" />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img
-                      src="./img/sponsors/wolfram-language-text-logo.png"
-                      alt="Brand"
-                    />
-                  </div>
-                  <div class="single_brand text-center">
-                    <img src="./img/sponsors/zulip.svg" alt="Brand" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Past Sponsors Section End -->
-    <!-- speakers_start -->
-    <div class="speakers_area" id="organisers">
-      <h1 class="horizontal_text d-none d-lg-block">Organising Team</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="serction_title_large mb-95">
-              <h3>Organising Team</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/ananya1.jpeg"
-                  alt=""
-                  data-pagespeed-url-hash="951566752"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://www.facebook.com/ananyaparajita"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a
-                      href="https://instagram.com/ananya._.mohanty?igshid=1d2vtb6nhkfzw"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iit2018045@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h3>Ananya Mohanty</h3>
-                <p>Lead Organiser</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/chaitali1.jpeg"
-                  alt=""
-                  data-pagespeed-url-hash="1246066673"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://m.facebook.com/chaitali.agrawal.9"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a href="https://www.instagram.com/agrawal.chaitali/"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iit2018504@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h3>Chaitali Agrawal</h3>
-                <p>Lead Organiser</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/cheena.jpg"
-                  alt=""
-                  data-pagespeed-url-hash="1246066673"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://www.facebook.com/cheena.budhiraja.7"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a href="https://instagram.com/cheena39?igshid=uk1moent8p8m"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iit2018067@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h3>Cheena Budhiraja</h3>
-                <p>Lead Organiser</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-between">
-          <div class="col-md-3">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/muskan.jpeg"
-                  alt=""
-                  data-pagespeed-url-hash="951566752"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://www.facebook.com/muskandeep.kaur.520"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a
-                      href="https://instagram.com/mendelevium_?igshid=1emjk5ruztme3"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iec2019088@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h4 class="pt-4">Muskan Deep Kaur</h4>
-                <p>Organiser</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/kalpana.jpeg"
-                  alt=""
-                  data-pagespeed-url-hash="951566752"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://www.facebook.com/chinu.khutela.9"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a href="https://www.instagram.com/chi_nu2000/"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iib2019019@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h4 class="pt-4">Kalpana Khutela</h4>
-                <p>Organiser</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="single_speaker">
-              <div class="speaker_thumb">
-                <img
-                  src="img/speakers/pavika.jpeg"
-                  alt=""
-                  data-pagespeed-url-hash="951566752"
-                />
-                <div class="hover_overlay">
-                  <div class="social_icon">
-                    <a href="https://www.facebook.com/pavika.chaudhary.7"
-                      ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a href="https://www.instagram.com/_pavika__/"
-                      ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a href="mailto:iit2019011@iiita.ac.in"
-                      ><i class="fa fa-envelope"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="speaker_name text-center">
-                <h4 class="pt-4">Pavika Chaudhary</h4>
-                <p>Organiser</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- speakers_end-->
-    <!-- Prizes Start -->
-    <div class="prizes mb-95" id="prizes">
-      <div class="container">
-        <div class="row">
-          <div class="col my-5">
-            <div class="serction_title_large">
-              <h3 class="text-center text-white">Prizes</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/1st.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/2nd.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/3rd.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/BFY.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f1.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f2.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f3.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f4.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f5.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f10.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f7.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f8.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-12 mb-95 prize-padd">
-            <div class="prize-card">
-              <img class="prizeBox" src="./img/prizes/f6.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Prizes End -->
+  </div>
+  <!-- Slider Section End -->
 
-    <!-- faq_area_Start -->
-    <div class="faq_area" id="faq" style="padding-top: 0">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="serction_title_large mb-95">
-              <h3>FAQs</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="false"
-                      aria-controls="collapseOne"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> Who can attend?
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseOne"
-                  class="collapse"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    If you're a college student and identify as female, we'd
-                    love to have you at SheHacks! Whether that's undergrad, or
-                    graduate, we believe you can get something out of the event.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> How big are teams?
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    Teams can consist of anywhere from 2-4 people, generally 3.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> How much does
-                      SheHacks cost?
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    Nothing! We'll also have fun contests and associated prizes.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingFive">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> Can I work on
-                      existing projects?
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseFive"
-                  class="collapse"
-                  aria-labelledby="headingFive"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    Nope, you can't. The projects have to be developed within
-                    the given timeframe from scratch.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSix">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> Where will
-                      SheHacks be held?
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseSix"
-                  class="collapse"
-                  aria-labelledby="headingSix"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    It will be held online using discord servers!
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingSeven">
-                  <h5 class="mb-0">
-                    <button
-                      class="btn btn-link collapsed"
-                      data-toggle="collapse"
-                      data-target="#collapseSeven"
-                      aria-expanded="false"
-                      aria-controls="collapseSeven"
-                    >
-                      <img src="img/barnd/info.png" alt="" /> My Question wasn't
-                      answered here!
-                    </button>
-                  </h5>
-                </div>
-                <div
-                  id="collapseSeven"
-                  class="collapse"
-                  aria-labelledby="headingSeven"
-                  data-parent="#accordion"
-                >
-                  <div class="card-body">
-                    Please email us at
-                    <a href="mailto:team@shehacks.tech">team@shehacks.tech</a>
-                    with all your questions!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- About Section Start -->
+  <div class="about_area" id="about">
+    <div class="shape-1 d-none d-xl-block">
+      <img src="img/about/shap1.png" alt="" />
     </div>
-    <!-- faq_area_end -->
-    <!-- footer_start -->
-    <footer class="footer footer_bg_1" id="contact">
-      <div class="circle_ball d-none d-lg-block">
-        <img src="img/banner/footer_ball.png" alt="" />
-      </div>
-      <div class="footer_top">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-4 col-md-4 col-lg-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Follow Us</h3>
-                <ul>
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/SheHacks-IIITA-102217678035830/"
-                      >Facebook</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://instagram.com/shehacks_iiita?igshid=1mb3zmihest4y"
-                      >Instagram</a
-                    >
-                  </li>
-                </ul>
-              </div>
+    <div class="shape-2 d-none d-xl-block">
+      <img src="img/about/shap2.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-md-6">
+          <div class="about_thumb">
+            <img src="img/she-about.png" style="width: 80%; display: block; margin: auto" alt="" />
+          </div>
+        </div>
+        <div class="col-xl-5 offset-xl-1 col-md-6">
+          <div class="about_info">
+            <div class="section_title">
+              <span class="sub_heading">Welcome To</span>
+              <h3>
+                The Biggest Female <br />
+                Hackathon of the <br />
+                Year 2021
+              </h3>
             </div>
-            <div class="col-xl-4 col-md-4 col-lg-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Links</h3>
-                <ul>
-                  <li>
-                    <a
-                      target="_blank"
-                      href="https://www.flickr.com/photos/ams_iiita/albums/72157677045762737"
-                      >Gallery</a
-                    >
-                  </li>
-                  <li>
-                    <a target="_blank" href="http://mlh.io/code-of-conduct"
-                      >Code of Conduct</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-4 col-lg-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Organisers</h3>
+            <p>
+              To create a more diverse and inclusive tech world, we need to
+              inspire and empower the next generation of female role models to
+              pursue and develop their career in technology and become
+              innovators, leaders and entrepreneurs. It's a process and it's
+              not always straightforward. It takes time, action and support.
+              Join us on a mission! Together we can make a difference.
+            </p>
+            <a href="#about" id="myBtn_2" class="boxed-btn-violet">
+              <i class="fab fa-2x fa-discord"></i>&nbsp;&nbsp; Join Our
+              Discord
+            </a>
+            <!-- The Modal -->
+            <div id="myModal_2" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content modal-content_2">
+                <span class="close close_2">&times;</span>
                 <p>
-                  SheHacks, IIIT Allahabad<br />
-                  <a href="mailto:team@shehacks.tech" style="color: white"
-                    >team@shehacks.tech</a
-                  >
-                  <br />
-                  +91 89890 73560
+                  Please Submit your Application of Devfolio, & after completion of your Registration Process, you will
+                  receive the link to the Discord Server, via Mail.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="copy-right_text">
-        <div class="container">
-          <div class="footer_border"></div>
+    </div>
+  </div>
+  <!-- About Section End -->
+
+  <!-- Sponsor Section Start -->
+  <div class="resister_book resister_bg_1" id="register" style="padding: 40px; padding-bottom: 10px">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="resister_text text-center">
+            <h3>Interested in sponsoring SheHacks?</h3>
+            <h3>
+              <small style="
+                    font-size: 20px;
+                    font-weight: 350;
+                    font-stretch: condensed;
+                    line-height: normal;
+                  ">By sponsoring SheHacks, you will help promote the culture of
+                women developers! <br />
+                Help us overcome social and geographical barriers, and build a
+                better world through technological innovation!</small>
+            </h3>
+            <a href="SheHacks - Association Brochure.pdf" class="boxed-btn-white">SheHacks- Association Brochure</a>
+            <br /><br />
+            <h3 style="margin-bottom: 0px">
+              <small style="font-size: 20px; font-weight: 350">Contact us at
+                <a href="mailto:team@shehacks.tech">team@shehacks.tech</a></small>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sponsor Section End -->
+
+  <!-- Sponsors Section Start -->
+  <div class="speakers_area" style="padding-bottom: 0px">
+    <h1 class="horizontal_text d-none d-lg-block">Our Sponsors</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="serction_title_large mb-95">
+            <h3>Our Sponsors</h3>
+          </div>
+        </div>
+      </div>
+      <div class="brand_area past-sponsors">
+        <div class="container p-5">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-9">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://juspay.in/">
+                  <img src="./img/patrons/juspay.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-9">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://circleci.com/">
+                  <img src="./img/patrons/circle.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.elastic.co/">
+                  <img src="./img/patrons/elastic.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://devfolio.co/home/">
+                  <img src="./img/patrons/devfolio.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="#">
+                  <img src="./img/patrons/dic.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="#">
+                  <img src="./img/patrons/ihl.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="https://balsamiq.com/">
+                  <img src="./img/patrons/balsamiq.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-center">
+            <div class="col-7">
+              <div class="single_brand text-center d-flex justify-content-center">
+                <a target="_blank" href="https://www.codingninjas.com/">
+                  <img src="./img/patrons/code_ninjas.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 pt-3 justify-content-between">
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://matic.network/">
+                  <img src="./img/patrons/matic.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://rstudio.com/">
+                  <img src="./img/patrons/r.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5 pt-3 justify-content-between">
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.portis.io/">
+                  <img src="./img/patrons/portis.svg" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://tezos.com/">
+                  <img src="./img/patrons/tezos.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5 pt-3 justify-content-between">
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://yoast.com/">
+                  <img src="./img/patrons/yoast.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.geeksforgeeks.org/">
+                  <img src="./img/patrons/gfg.jpeg" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://deepsource.io/">
+                  <img src="./img/patrons/deepsource.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.wolfram.com/">
+                  <img src="./img/patrons/wolfram.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.digitalocean.com/">
+                  <img src="./img/patrons/digitalocean.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 justify-content-between">
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://www.sketch.com/about-us/">
+                  <img src="./img/patrons/sketch.svg" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="single_brand text-center">
+                <a target="_blank" href="https://get.tech/">
+                  <img src="./img/patrons/tech.png" class="patron" alt="Brand" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sponsors Section End -->
+
+  <!-- Past Sponsors Section Start -->
+  <div class="speakers_area" style="padding-bottom: 0px">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <h1 class="text-center">Our Past Sponsors</h1>
+        </div>
+      </div>
+      <div class="brand_area past-sponsors">
+        <div class="container past-sponsors__block p-5">
+          <div class="row mb-5">
+            <div class="col-xl-12">
+              <div class="brand_active owl-carousel">
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/balsamiq.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/buildkite.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/codingblocks.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/Crowdera.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/devfolio.svg" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/fold.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/Gatsby-Logo.svg" alt="Brand" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-xl-12">
+              <div class="brand_active owl-carousel">
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/girlscript.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/hackerearth.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/hasura.svg" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/heroku.svg" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/jetbrains.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/linode-full-RGB-fc.svg" alt="Brand" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-xl-12">
-              <p class="copy_right text-center">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <div class="brand_active owl-carousel">
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/logo-elastic.svg" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/matic.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/Protoio-logo.svg" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/quicknode.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/TECH.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/wolfram-language-text-logo.png" alt="Brand" />
+                </div>
+                <div class="single_brand text-center">
+                  <img src="./img/sponsors/zulip.svg" alt="Brand" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Past Sponsors Section End -->
+
+  <!-- Organizers Start -->
+  <div class="speakers_area" id="organisers">
+    <h1 class="horizontal_text d-none d-lg-block">Organising Team</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="serction_title_large mb-95">
+            <h3>Organising Team</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/ananya1.jpeg" alt="" data-pagespeed-url-hash="951566752" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://www.facebook.com/ananyaparajita"><i class="fa fa-facebook"></i></a>
+                  <a href="https://instagram.com/ananya._.mohanty?igshid=1d2vtb6nhkfzw"><i
+                      class="fa fa-instagram"></i></a>
+                  <a href="mailto:iit2018045@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h3>Ananya Mohanty</h3>
+              <p>Lead Organiser</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/chaitali1.jpeg" alt="" data-pagespeed-url-hash="1246066673" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://m.facebook.com/chaitali.agrawal.9"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/agrawal.chaitali/"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:iit2018504@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h3>Chaitali Agrawal</h3>
+              <p>Lead Organiser</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/cheena.jpg" alt="" data-pagespeed-url-hash="1246066673" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://www.facebook.com/cheena.budhiraja.7"><i class="fa fa-facebook"></i></a>
+                  <a href="https://instagram.com/cheena39?igshid=uk1moent8p8m"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:iit2018067@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h3>Cheena Budhiraja</h3>
+              <p>Lead Organiser</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-md-3">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/muskan.jpeg" alt="" data-pagespeed-url-hash="951566752" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://www.facebook.com/muskandeep.kaur.520"><i class="fa fa-facebook"></i></a>
+                  <a href="https://instagram.com/mendelevium_?igshid=1emjk5ruztme3"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:iec2019088@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h4 class="pt-4">Muskan Deep Kaur</h4>
+              <p>Organiser</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/kalpana.jpeg" alt="" data-pagespeed-url-hash="951566752" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://www.facebook.com/chinu.khutela.9"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/chi_nu2000/"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:iib2019019@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h4 class="pt-4">Kalpana Khutela</h4>
+              <p>Organiser</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="single_speaker">
+            <div class="speaker_thumb">
+              <img src="img/speakers/pavika.jpeg" alt="" data-pagespeed-url-hash="951566752" />
+              <div class="hover_overlay">
+                <div class="social_icon">
+                  <a href="https://www.facebook.com/pavika.chaudhary.7"><i class="fa fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/_pavika__/"><i class="fa fa-instagram"></i></a>
+                  <a href="mailto:iit2019011@iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="speaker_name text-center">
+              <h4 class="pt-4">Pavika Chaudhary</h4>
+              <p>Organiser</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Organizers End-->
+
+  <!-- Prizes Start -->
+  <div class="prizes mb-95" id="prizes">
+    <div class="container">
+      <div class="row">
+        <div class="col my-5">
+          <div class="serction_title_large">
+            <h3 class="text-center text-white">Prizes</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/1st.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/2nd.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/3rd.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/BFY.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f1.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f3.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f4.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f5.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f10.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f7.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f8.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 mb-95 prize-padd">
+          <div class="prize-card">
+            <img class="prizeBox" src="./img/prizes/f6.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Prizes End -->
+
+  <!-- FAQ Area_Start -->
+  <div class="faq_area" id="faq" style="padding-top: 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="serction_title_large mb-95">
+            <h3>FAQs</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    <img src="img/barnd/info.png" alt="" /> Who can attend?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  If you're a college student and identify as female, we'd
+                  love to have you at SheHacks! Whether that's undergrad, or
+                  graduate, we believe you can get something out of the event.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <img src="img/barnd/info.png" alt="" /> How big are teams?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Teams can consist of anywhere from 2-4 people, generally 3.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <img src="img/barnd/info.png" alt="" /> How much does
+                    SheHacks cost?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Nothing! We'll also have fun contests and associated prizes.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                    aria-expanded="false" aria-controls="collapseFive">
+                    <img src="img/barnd/info.png" alt="" /> Can I work on
+                    existing projects?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  Nope, you can't. The projects have to be developed within
+                  the given timeframe from scratch.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                    aria-expanded="false" aria-controls="collapseSix">
+                    <img src="img/barnd/info.png" alt="" /> Where will
+                    SheHacks be held?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                  It will be held online using discord servers!
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                    aria-expanded="false" aria-controls="collapseSeven">
+                    <img src="img/barnd/info.png" alt="" /> My Question wasn't
+                    answered here!
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body">
+                  Please email us at
+                  <a href="mailto:team@shehacks.tech">team@shehacks.tech</a>
+                  with all your questions!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ Area End -->
+
+  <!-- Footer Start -->
+  <footer class="footer footer_bg_1" id="contact">
+    <div class="circle_ball d-none d-lg-block">
+      <img src="img/banner/footer_ball.png" alt="" />
+    </div>
+    <div class="footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 col-lg-4">
+            <div class="footer_widget">
+              <h3 class="footer_title">Follow Us</h3>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/SheHacks-IIITA-102217678035830/">Facebook</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://instagram.com/shehacks_iiita?igshid=1mb3zmihest4y">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-lg-4">
+            <div class="footer_widget">
+              <h3 class="footer_title">Links</h3>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://www.flickr.com/photos/ams_iiita/albums/72157677045762737">Gallery</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://mlh.io/code-of-conduct">Code of Conduct</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-lg-4">
+            <div class="footer_widget">
+              <h3 class="footer_title">Organisers</h3>
+              <p>
+                SheHacks, IIIT Allahabad<br />
+                <a href="mailto:team@shehacks.tech" style="color: white">team@shehacks.tech</a>
+                <br />
+                +91 89890 73560
               </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer_end -->
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/plugins.js"></script>
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-23581568-13");
-    </script>
+    </div>
+    <div class="copy-right_text">
+      <div class="container">
+        <div class="footer_border"></div>
+        <div class="row">
+          <div class="col-xl-12">
+            <p class="copy_right text-center">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 
-    <!-- Devfolio Registration Script -->
-    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-  </body>
+  <!-- JS here -->
+  <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/ajax-form.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/scrollIt.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/nice-select.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <script src="js/plugins.js"></script>
+  <!--contact js-->
+  <script src="js/contact.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "UA-23581568-13");
+  </script>
 
-  <!-- Mirrored from preview.colorlib.com/theme/wemeet/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Nov 2020 20:15:14 GMT -->
+  <!-- Devfolio Registration Script -->
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/wemeet/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 Nov 2020 20:15:14 GMT -->
+
 </html>

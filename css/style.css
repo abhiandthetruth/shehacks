@@ -540,6 +540,15 @@ h3 {
   text-transform: capitalize;
 }
 
+.boxed-btn-violet.header_discord{
+  width: 312px;
+  height: 44px;
+  background: #fff;
+  color: #6079d1;
+  border: #fff;
+  border-radius: 4px;
+}
+
 /* line 41, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_btn.scss */
 .boxed-btn-violet:hover {
   background: #fff;

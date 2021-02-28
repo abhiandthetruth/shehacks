@@ -1,0 +1,209 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+
+.body_overlay{
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.75);
+  z-index: 9;
+}
+
+.trust_badge1 {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 10%;
+  z-index: 8;
+}
+
+@media only screen and (max-width: 992px) {
+  .trust_badge1 {
+    left: 20px;
+  }
+}
+
+.trust_badge2 {
+  display: block;
+  max-width: 150px;
+  min-width: 120px;
+  position: absolute;
+  right: 140px;
+  top: 2px;
+  width: 10%;
+  z-index: 8;
+}
+
+@media only screen and (max-width: 992px) {
+  .trust_badge2 {
+    left: 140px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .trust_badge2 {
+    left: 120px;
+    min-width: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .trust_badge2 {
+    left: 100px;
+  }
+}
+
+.header-area .main-header-area .logo-img img {
+  height: 100%;
+  width: 30px;
+  object-fit: contain;
+}
+
+.register_hide {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-area .main-header-area .logo-img img {
+    height: 100%;
+    width: 20px;
+    object-fit: contain;
+  }
+}
+
+.slider_area.slider_bg_1 {
+  padding-top: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider_area.slider_bg_1 {
+    padding-top: 140px;
+  }
+}
+
+.prizes {
+  background-image: url("../img/banner/resister.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prize-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.prizeBox {
+  width: 100%;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .prize-padd {
+    padding: 30px;
+  }
+
+  .large-hidden {
+    visibility: visible;
+  }
+}
+
+.patron {
+  /* height: 100%; */
+  width: 100%;
+}
+
+.past-sponsors.brand_area {
+  padding: 50px 0;
+}
+
+.past-sponsors__block {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.single_brand {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.brand_area .brand_active .single_brand img {
+  max-width: 125px;
+  max-height: 50px;
+}
+
+/* ========= */
+/* MODEL CSS */
+/* ========= */
+
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-size: cover;
+  margin: 15% auto;
+  padding: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content_1{
+  background-color: white;
+}
+.modal-content_2{
+  background-image: url('../img/banner/banner_3.png');
+}
+
+.modal .modal-content_1>p{
+  font-weight: 500;
+  color: black;
+  margin: 30px 0;
+}
+.modal .modal-content_2>p{
+  font-weight: 500;
+  color: white;
+  margin: 30px 0;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_1{
+  color: rgba(0,0,0,.0.9);
+}
+.close_2{
+  color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 

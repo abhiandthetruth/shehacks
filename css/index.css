@@ -90,6 +90,34 @@ body{
   }
 }
 
+.tl_div{
+  margin: 0 5%;
+}
+
+.tl_web_div, .tl_mob_div{
+  width: 100%;
+}
+
+.tl_web_img, .tl_mob_img{
+  width: 100%;
+}
+
+.tl_web_div{
+  display: block;
+}
+.tl_mob_div{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .tl_web_div{
+    display: none;
+  }
+  .tl_mob_div{
+    display: block;
+  }
+}
+
 .prizes {
   background-image: url("../img/banner/resister.png");
   background-repeat: no-repeat;

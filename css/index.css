@@ -171,6 +171,11 @@ body{
   max-height: 50px;
 }
 
+.speaker_logo{
+  width: 50%;
+  margin: 10% 25%;
+}
+
 /* ========= */
 /* MODEL CSS */
 /* ========= */
